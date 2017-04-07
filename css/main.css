@@ -1,4 +1,8 @@
-nav ul li {
+h1 {
+  color: blue;
+}
+
+ul li {
   display: inline;
-  margin-right: 20px;
+  margin-right: 0.5em;
 }
