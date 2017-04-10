@@ -14,18 +14,8 @@
   float: none;
 }
 
-@media (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-}
-
-.container-narrow > hr {
-  margin: 30px 0;
-}
-
-.red {
-  color: red;
+.btn-success {
+  margin-top: 1em;
 }
 
 footer {
@@ -35,3 +25,13 @@ footer {
   bottom: 0;
   left: 0;
 }
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+
+/*.container-narrow > hr {
+  margin: 30px 0;
+}*/

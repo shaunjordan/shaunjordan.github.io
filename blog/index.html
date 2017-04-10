@@ -3,26 +3,30 @@ layout: archive
 title: Blog
 ---
 <!--archive page -->
-<h1>{{ page.title }}</h1>
+<div class="container">
+  <div class="blog-header">
+  <h1 class="blog-title">{{ page.title }}</h1>
 
+  </div>
+  <div class="row">
+  <div class="col-sm-8 blog-main">
 
-  {% for post in site.posts %}
-    <div class="row">
-      <div class="col-sm-8 blog-main">
-      <div class="blog-post">
-      <h2 class="blog-post-title"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-      <p class="blog-post-meta">{{ post.date | date_to_string }}</p>
-      {{ post.excerpt }}
-      {% if post.excerpt != post.content %}
-  			<a href="{{ site.baseurl }}{{ post.url }}">Read more</a>
-  		{% endif %}
-    </div>
-    </div>
-    </div>
-  {% endfor %}
+    {% for post in site.posts %}
 
+        <div class="blog-post">
+        <h2 class="blog-post-title"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+        <p class="blog-post-meta">{{ post.date | date_to_string }}</p>
+        {{ post.excerpt }}
+        {% if post.excerpt != post.content %}
+    			<a href="{{ site.baseurl }}{{ post.url }}">Read more</a>
+    		{% endif %}
+        </div>
 
+    {% endfor %}
 
+  </div>
+  </div>
+</div>
 
 <!--
 <ul class="posts">
