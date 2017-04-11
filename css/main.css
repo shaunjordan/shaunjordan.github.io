@@ -58,3 +58,50 @@ nav li a:hover {
   margin-bottom: 20px;
   color: #999;
 }
+
+@media only screen and (min-width: 500px) {
+    .collapse {
+        display: block;
+    }
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: none;
+    }
+    .navbar-nav {
+       float: none;
+       margin: 0;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+       padding-top: 15px;
+       padding-bottom: 15px;
+    }
+    .navbar-right {
+        float: right!important;
+    }
+    .navbar-brand {
+      display: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+     .collapse {
+        display: none;
+     }
+     .navbar-header {
+        display: block;
+     }
+     .navbar-nav>li {
+        display: block;
+     }
+     .page-header {
+      display: none;
+     }
+     .navbar-brand {
+       display: inline;
+     }
+}
