@@ -6,7 +6,6 @@
   float: none;
   display: block;
   text-align: center;
-  margin-bottom: 2em;
 }
 
 .navbar-nav > li {
@@ -30,4 +29,18 @@ footer {
   .container {
     max-width: 730px;
   }
+}
+
+/*.container-narrow > hr {
+  margin: 30px 0;
+}*/
+nav a {
+  color: black;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-left: -.25em;
+}
+
+nav li a:hover {
+  background-color: blue;
 }
