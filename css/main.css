@@ -25,6 +25,13 @@ footer {
   left: 0;
 }
 
+ul.footer-icons li{
+  display: inline;
+  margin: 0 .25em 0;
+  list-style: none;
+  text-align: center;
+}
+
 nav a {
   color: black;
   font-weight: bold;
@@ -97,6 +104,7 @@ nav li a:hover {
      }
      .navbar-nav>li {
         display: block;
+        text-align: right;
      }
      .page-header {
       display: none;
