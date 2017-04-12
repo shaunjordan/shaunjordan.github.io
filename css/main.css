@@ -1,5 +1,47 @@
+html {
+  position: relative;
+  min-height: 100%;
+  color: black;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  text-align: center;
+}
+
 .page-header {
   margin-bottom: 0;
+  border: none;
+  font-family: "Open Sans";
+}
+
+.form-box {
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  padding: 15px 25px;
+  border-radius: 5px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.latest-posts {
+  float: right;
+}
+
+.btn-success {
+  box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+.btn-success:hover {
+  box-shadow: 0 17px 10px 0 rgba(0, 0, 0, 0.2);
+  transform: translate(0, -5px);
 }
 
 .navbar-nav {
@@ -17,14 +59,6 @@
   margin-top: 1em;
 }
 
-footer {
-  text-align: center;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
 ul.footer-icons li{
   display: inline;
   margin: 0 .25em 0;
@@ -32,16 +66,19 @@ ul.footer-icons li{
   text-align: center;
 }
 
-nav a {
+.nav a {
   color: black;
   font-weight: bold;
   font-size: 1.2em;
   margin-left: -.25em;
 }
 
-nav li a:hover {
-  background-color: blue;
+ul.nav a:hover {
+  background-color: #fff !important;
+  border-radius: 5px;
+  border: 2px solid black;
 }
+
 
 .navbar-toggle {
   background-color: black;
@@ -56,10 +93,11 @@ nav li a:hover {
 }
 .blog-post {
   margin: 0 auto 50px auto;
+  max-width: 640px;
 }
 .blog-post-title {
   margin-bottom: 5px;
-  font-size: 40px;
+  font-size: 30px;
 }
 .blog-post-meta {
   margin-bottom: 20px;
@@ -102,7 +140,7 @@ nav li a:hover {
      .navbar-header {
         display: block;
      }
-     .navbar-nav>li {
+     .navbar-nav > li {
         display: block;
         text-align: right;
      }

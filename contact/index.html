@@ -2,13 +2,13 @@
 layout: default
 title: Contact Me
 ---
-<div class="container">
-
-
+<div class="form-box">
 <form method="POST" action="https://formspree.io/hello@shaunmjordan.com">
   <div class="form-group">
+    <label for="nameinput"></label>
+    <input class="form-control" required id="nameinput" type="text" placeholder="Your name">
     <label for="emailinput"></label>
-    <input class="form-control" id="emailinput" type="email" placeholder="Your email">
+    <input class="form-control" required id="emailinput" type="email" placeholder="Your email">
   </div>
   <textarea class="form-control" rows="4" name="message" placeholder="Your message"></textarea>
   <button class="btn btn-success" type="submit">Send  <span class="glyphicon glyphicon-send"></span></button>
