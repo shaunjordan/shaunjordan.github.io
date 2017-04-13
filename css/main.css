@@ -1,3 +1,8 @@
+/* TODO: all sections will be split up by category in SCSS - which needs
+to be removed from the .gitignore.
+Additionally, look for duplicate code that can be consolidated.
+*/
+
 html {
   position: relative;
   min-height: 100%;
@@ -33,6 +38,7 @@ body {
 
 .latest-posts {
   float: right;
+  list-style: none;
 }
 
 .btn-success {

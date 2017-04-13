@@ -9,7 +9,7 @@ title: Shaun Jordan
 <div class="latest-posts">
   <p>Latest Posts</p>
 <ul>
-  {% for post in site.posts %}
+  {% for post in site.posts limit:5 %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
