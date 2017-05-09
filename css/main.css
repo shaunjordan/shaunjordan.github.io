@@ -2,16 +2,26 @@
 to be removed from the .gitignore.
 Additionally, look for duplicate code that can be consolidated.
 */
-
 html {
   position: relative;
   min-height: 100%;
   color: black;
 }
+
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
 }
+
+.homepage {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.welcome p {
+  text-align: center;
+}
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -36,18 +46,33 @@ body {
   margin-right: auto;
 }
 
+.welcome > div > p.opening {
+  width: 55%;
+  margin: 0 auto 5em;
+  text-align: left;
+}
+
 .latest-posts {
-  float: right;
   list-style: none;
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 10px;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.latest-posts ul {
+  list-style: none;
+  padding: 0;
+}
+
+.latest-posts p {
+  text-decoration: underline;
 }
 
 .btn-success {
-  box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.4);
-}
-
-.btn-success:hover {
-  box-shadow: 0 17px 10px 0 rgba(0, 0, 0, 0.2);
-  transform: translate(0, -5px);
+  font-size: 18px;
+  letter-spacing: .5px;
 }
 
 .navbar-nav {
@@ -65,7 +90,7 @@ body {
   margin-top: 1em;
 }
 
-ul.footer-icons li{
+ul.footer-icons li {
   display: inline;
   margin: 0 .25em 0;
   list-style: none;
@@ -81,10 +106,7 @@ ul.footer-icons li{
 
 ul.nav a:hover {
   background-color: #fff !important;
-  border-radius: 5px;
-  border: 2px solid black;
 }
-
 
 .navbar-toggle {
   background-color: black;
@@ -97,63 +119,69 @@ ul.nav a:hover {
 .blog-title {
   text-align: center;
 }
+
 .blog-post {
   margin: 0 auto 50px auto;
   max-width: 640px;
 }
+
 .blog-post-title {
   margin-bottom: 5px;
   font-size: 30px;
 }
+
 .blog-post-meta {
   margin-bottom: 20px;
   color: #999;
 }
 
 @media only screen and (min-width: 500px) {
-    .collapse {
-        display: block;
-    }
-    .navbar-header {
-        float: none;
-    }
-    .navbar-toggle {
-        display: none;
-    }
-    .navbar-nav {
-       float: none;
-       margin: 0;
-    }
-    .navbar-nav>li {
-        float: none;
-    }
-    .navbar-nav>li>a {
-       padding-top: 15px;
-       padding-bottom: 15px;
-    }
-    .navbar-right {
-        float: right!important;
-    }
-    .navbar-brand {
-      display: none;
-    }
+  .collapse {
+    display: block;
+  }
+  .navbar-header {
+    float: none;
+  }
+  .navbar-toggle {
+    display: none;
+  }
+  .navbar-nav {
+    float: none;
+    margin: 0;
+  }
+  .navbar-nav > li {
+    float: none;
+  }
+  .navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .navbar-right {
+    float: right !important;
+  }
+  .navbar-brand {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 500px) {
-     .collapse {
-        display: none;
-     }
-     .navbar-header {
-        display: block;
-     }
-     .navbar-nav > li {
-        display: block;
-        text-align: right;
-     }
-     .page-header {
-      display: none;
-     }
-     .navbar-brand {
-       display: inline;
-     }
+  .collapse {
+    display: none;
+  }
+  .navbar-header {
+    display: block;
+  }
+  .navbar-nav > li {
+    display: block;
+    text-align: right;
+  }
+  .page-header {
+    display: none;
+  }
+  .navbar-brand {
+    display: inline;
+  }
+  .homepage {
+    margin: 0;
+  }
 }
