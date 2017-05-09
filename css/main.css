@@ -1,5 +1,78 @@
+/* TODO: all sections will be split up by category in SCSS - which needs
+to be removed from the .gitignore.
+Additionally, look for duplicate code that can be consolidated.
+*/
+html {
+  position: relative;
+  min-height: 100%;
+  color: black;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+.homepage {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.welcome p {
+  text-align: center;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  text-align: center;
+}
+
 .page-header {
   margin-bottom: 0;
+  border: none;
+  font-family: "Open Sans";
+}
+
+.form-box {
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  padding: 15px 25px;
+  border-radius: 5px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.welcome > div > p.opening {
+  width: 55%;
+  margin: 0 auto 5em;
+  text-align: left;
+}
+
+.latest-posts {
+  list-style: none;
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 10px;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.latest-posts ul {
+  list-style: none;
+  padding: 0;
+}
+
+.latest-posts p {
+  text-decoration: underline;
+}
+
+.btn-success {
+  font-size: 18px;
+  letter-spacing: .5px;
 }
 
 .navbar-nav {
@@ -17,30 +90,22 @@
   margin-top: 1em;
 }
 
-footer {
-  text-align: center;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-ul.footer-icons li{
+ul.footer-icons li {
   display: inline;
   margin: 0 .25em 0;
   list-style: none;
   text-align: center;
 }
 
-nav a {
+.nav a {
   color: black;
   font-weight: bold;
   font-size: 1.2em;
   margin-left: -.25em;
 }
 
-nav li a:hover {
-  background-color: blue;
+ul.nav a:hover {
+  background-color: #fff !important;
 }
 
 .navbar-toggle {
@@ -54,62 +119,69 @@ nav li a:hover {
 .blog-title {
   text-align: center;
 }
+
 .blog-post {
   margin: 0 auto 50px auto;
+  max-width: 640px;
 }
+
 .blog-post-title {
   margin-bottom: 5px;
-  font-size: 40px;
+  font-size: 30px;
 }
+
 .blog-post-meta {
   margin-bottom: 20px;
   color: #999;
 }
 
 @media only screen and (min-width: 500px) {
-    .collapse {
-        display: block;
-    }
-    .navbar-header {
-        float: none;
-    }
-    .navbar-toggle {
-        display: none;
-    }
-    .navbar-nav {
-       float: none;
-       margin: 0;
-    }
-    .navbar-nav>li {
-        float: none;
-    }
-    .navbar-nav>li>a {
-       padding-top: 15px;
-       padding-bottom: 15px;
-    }
-    .navbar-right {
-        float: right!important;
-    }
-    .navbar-brand {
-      display: none;
-    }
+  .collapse {
+    display: block;
+  }
+  .navbar-header {
+    float: none;
+  }
+  .navbar-toggle {
+    display: none;
+  }
+  .navbar-nav {
+    float: none;
+    margin: 0;
+  }
+  .navbar-nav > li {
+    float: none;
+  }
+  .navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .navbar-right {
+    float: right !important;
+  }
+  .navbar-brand {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 500px) {
-     .collapse {
-        display: none;
-     }
-     .navbar-header {
-        display: block;
-     }
-     .navbar-nav>li {
-        display: block;
-        text-align: right;
-     }
-     .page-header {
-      display: none;
-     }
-     .navbar-brand {
-       display: inline;
-     }
+  .collapse {
+    display: none;
+  }
+  .navbar-header {
+    display: block;
+  }
+  .navbar-nav > li {
+    display: block;
+    text-align: right;
+  }
+  .page-header {
+    display: none;
+  }
+  .navbar-brand {
+    display: inline;
+  }
+  .homepage {
+    margin: 0;
+  }
 }

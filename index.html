@@ -2,5 +2,18 @@
 layout: default
 title: Shaun Jordan
 ---
+<div class="homepage">
+<div class="welcome">
+    <div>
 
-<h1>A Test</h1>
+    </div>
+    <div class="latest-posts">
+      <p><a href="blog/index.html">Latest Posts</a></p>
+    <ul>
+      {% for post in site.posts limit:5 %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+    </div>
+</div>
+</div>
