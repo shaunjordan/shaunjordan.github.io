@@ -5,14 +5,16 @@
 
 		{% include header.html %}
 		{% include nav.html %}
+		<main>
+			<div class="posts">
+				{{ content }}
+			</div>
+		</main>
 
-		<div class="row">
-			{{ content }}
-		</div>
 
 
 
-
+		{% include footer.html %}
 		{% include scripts.html %}
 	</body>
 </html>

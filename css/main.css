@@ -1,10 +1,24 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
 nav {
-  background-color: #fafafa;
+  background-color: white;
+  position: relative;
 }
 
 .nav-wrapper {
-  margin-right: 25em;
-  margin-left: 25em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px;
 }
 
 a.brand-logo {
@@ -13,4 +27,74 @@ a.brand-logo {
 
 .nav-wrapper li a {
   color: black;
+}
+
+.posts {
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.blog-posts {
+  padding-bottom: 15px;
+  border-bottom: 1px solid lightgray;
+}
+
+form {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.form-box {
+  margin-top: 5em;
+}
+
+.form-box span {
+  font-size: 1.7em;
+  background-color: white;
+}
+
+textarea {
+  height: 200px;
+  padding: 5px 5px;
+}
+
+.btn {
+  background-color: lightgreen;
+  margin-top: 10px;
+}
+
+.page-footer {
+  background-color: white;
+  color: black;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.footer-li {
+  text-align: center;
+}
+
+.footer-li li {
+  display: inline-block;
+}
+
+.footer-li li {
+  padding-right: 10px;
+}
+
+@media only screen and (min-width: 320px) {
+  .inside-nav {
+    max-width: 360px;
+  }
+  a.brand-logo {
+    position: relative;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .posts {
+    padding: 0 25px;
+  }
 }
