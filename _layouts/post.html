@@ -3,15 +3,19 @@
 {% include head.html %}
   <body>
 
-      {% include header.html %}
-      {% include nav.html %}
-      <div class="">
-      <h1>{{ page.title }}</h1>
-      <p class="meta">{{ page.date | date_to_string }}</p>
-        {{ content }}
-        <a href="/blog/index.html">Back to Posts</a>
-      </div>
+    {% include header.html %}
+    {% include nav.html %}
 
+      <main>
+        <div class="post-full">
+          <h4>{{ page.title }}</h4>
+          <p class="meta">{{ page.date | date_to_string }}</p>
+
+          {{ content }}
+
+        <a href="/blog/index.html"><i class="fa fa-arrow-left fa-1x"></i> Back to Posts</a>
+        </div>
+      </main>
 
 
     {% include scripts.html %}

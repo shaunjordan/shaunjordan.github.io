@@ -2,22 +2,17 @@
 layout: archive
 title:
 ---
-<!--archive page -->
-<div class="container">
-  <div class="blog-header">
-    <h1 class="blog-title">{{ page.title }}</h1>
-  </div>
-</div>
+{% for post in site.posts %}
 
-  {% for post in site.posts %}
-
-  <div class="blog-posts">
-    <h4 class="blog-post-title"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h4>
-    <p class="blog-post-meta">{{ post.date | date_to_string }}</p>
+  <div class="excerpt-section">
+    <h5 class="post-title"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h5>
+    <p class="post-meta">{{ post.date | date_to_string }}</p>
     {{ post.excerpt }}
     {% if post.excerpt != post.content %}
     <a class="text-right" href="{{ site.baseurl }}{{ post.url }}">Read more</a>
     {% endif %}
   </div>
 
-  {% endfor %}
+
+
+{% endfor %}

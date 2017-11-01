@@ -10,7 +10,7 @@ main {
   flex: 1 0 auto;
 }
 
-// Nav section
+// Navbar
 nav {
   background-color: white;
   position: relative;
@@ -32,19 +32,19 @@ a.brand-logo {
 }
 
 
-// Archive Layout
-.posts {
-  margin: 0 auto;
-  max-width: 700px; //TODO: consolidate max width under single declaration for all applicable elements
+// Full posts and excerpts
+.default, .project-info, .post-full, .post-excerpts {
+  margin: 3em auto;
+  max-width: 700px;
 }
 
-.blog-posts {
+.excerpt-section {
   padding-bottom: 15px;
   border-bottom: 1px solid lightgray;
 }
-// .posts:not(:first-child){
-//   padding-top: 25px;
-// }
+
+
+// Email Form
 
 form {
   border: 1px solid lightgray;
@@ -54,10 +54,10 @@ form {
 
 .form-box {
   margin-top: 5em;
-  // line-height: 0;
+  line-height: 0;
 }
 .form-box span {
-// margin: 0 5px;
+margin: 0 5px;
 font-size: 1.7em;
 background-color: white;
 }
@@ -65,12 +65,15 @@ background-color: white;
 textarea {
   height: 200px;
   padding: 5px 5px;
+  line-height: 150%;
 }
 
 .btn {
   background-color: lightgreen;
   margin-top: 10px;
 }
+
+
 // Footer
 .page-footer {
   background-color: white;
@@ -92,7 +95,7 @@ textarea {
 
 
 // Mobile
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 300px) {
   .inside-nav {
     max-width: 360px;
   }
@@ -104,7 +107,7 @@ textarea {
 }
 
 @media only screen and (max-width: 750px) {
-  .posts {
+  .default, .project-info, .post-full, .post-excerpts {
     padding: 0 25px;
   }
 }
