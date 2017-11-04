@@ -4,6 +4,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  font-family: "Open Sans", sans-serif;
 }
 
 main {
@@ -11,7 +12,7 @@ main {
 }
 
 nav {
-  background-color: white;
+  background-color: #0277bd;
   position: relative;
 }
 
@@ -22,11 +23,19 @@ nav {
 }
 
 a.brand-logo {
-  color: #0277bd;
+  color: #fff;
+  font-family: Ubuntu,Times,sans-serif;
+  font-size: 2.25em;
 }
 
 .nav-wrapper li a {
-  color: black;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.project-info {
+  text-align: center;
 }
 
 .default, .project-info, .post-full, .post-excerpts {
@@ -37,6 +46,10 @@ a.brand-logo {
 .excerpt-section {
   padding-bottom: 15px;
   border-bottom: 1px solid lightgray;
+}
+
+.post-listing {
+  font-size: 1.5em;
 }
 
 form {
@@ -94,10 +107,22 @@ textarea {
     position: relative;
     margin: 0 auto;
   }
+  a.button-collapse, nav a.button-collapse i {
+    height: inherit;
+    line-height: inherit;
+    font-size: 1.5em;
+    float: right;
+  }
+  a.button-collapse {
+    color: #fff;
+  }
+  .side-nav {
+    background-color: #0277bd;
+  }
 }
 
 @media only screen and (max-width: 750px) {
-  .default, .project-info, .post-full, .post-excerpts {
+  .default, .project-info, .post-full, .post-excerpts, .text-muted {
     padding: 0 25px;
   }
 }
