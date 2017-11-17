@@ -2,15 +2,19 @@
 <html lang="en">
 {% include head.html %}
 	<body>
-		<div class="container">
+
 		{% include header.html %}
 		{% include nav.html %}
-	  </div>
+		<main>
+			<div class="post-excerpts">
+				{{ content }}
+			</div>
+		</main>
 
 
-		{{ content }}
 
-		<!-- /.container -->
+
+		{% include footer.html %}
 		{% include scripts.html %}
 	</body>
 </html>
