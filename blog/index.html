@@ -9,10 +9,10 @@ title:
     <p class="post-meta">{{ post.date | date_to_string }}</p>
     {{ post.excerpt }}
     {% if post.excerpt != post.content %}
-    <a class="text-right" href="{{ site.baseurl }}{{ post.url }}">Read more</a>
+    <a class="text-right" href="{{ post.url }}">Read more</a>
     {% endif %}
   </div>
 
-
+<!--<a class="text-right" href="{{ site.baseurl }}{{ post.url }}">Read more</a>-->
 
 {% endfor %}
