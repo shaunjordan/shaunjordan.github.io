@@ -53,7 +53,7 @@ a.brand-logo {
 }
 
 form {
-  border: 1px solid lightgray;
+  border: 1px solid #000;
   border-radius: 10px;
   padding: 25px;
 }
@@ -69,6 +69,10 @@ form {
   background-color: white;
 }
 
+.input-field:focus {
+  border-bottom: 1px solid #0277bd !important;
+}
+
 textarea {
   height: 200px;
   padding: 5px 5px;
@@ -76,8 +80,16 @@ textarea {
 }
 
 .btn {
-  background-color: lightgreen;
+  background-color: #0581C7;
   margin-top: 10px;
+}
+
+.practice {
+  margin-left: 25px;
+}
+
+.practice li {
+  list-style-type: disc !important;
 }
 
 .page-footer {
