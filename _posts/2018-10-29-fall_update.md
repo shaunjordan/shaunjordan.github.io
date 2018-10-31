@@ -10,7 +10,7 @@ It's been a rather busy last few months since my previous post. I'm on a clear, 
 
 I've also been mulling over my final project and it appears Olga might have a good challenge. The program she uses to track metrics has two components that need to talk to each other, but don't, requiring her to fill in the same data in multiple places. A "going around your elbow to get to your thumb" kind of thing. I think I can write the necessary proposal to correct this and improve the functionality - at least that's my idea so far.
 
-Outside of tech-related stuff, I decided to build a desk over the summer due to not finding one that fit my specifications exactly. It turned out great. Plenty of room to hold my two monitors which some extra in case I hook up another, or set a Pi off to the side (as I plan to do for some Christmas light project I have in mind). School takes up the majority of my time, so if you know me personally, haven't seen me in a while and, most importantly, would like to, give me a shout. My free time is coming back soon and we should grab some lunch.
+Outside of tech-related stuff, I decided to build a desk over the summer due to not finding one that fit my specifications exactly. It turned out great for my first big project. Plenty of room to hold my two monitors with some extra in case I hook up another or set a Pi off to the side (as I plan to do for a Christmas light project I have in mind). School takes up the majority of my time so if you know me personally, haven't seen me in a while and, most importantly, would like to, give me a shout. My free time is coming back soon and we should grab some lunch.
 
 That's all for now. Take care.
 
